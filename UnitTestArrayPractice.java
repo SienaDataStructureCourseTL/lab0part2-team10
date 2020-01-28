@@ -1,11 +1,13 @@
+import java.util.Random;
+import java.util.Scanner;
 /**
  * This class is used to perform a unit test on the
  * ArrayPractice class.  
  * 
  * DO NOT ALTER THIS CLASS UNTIL INSTRUCTED TO DO SO.  
  *
- * @author Prof. White, modified by (your names)
- * @version Fall 2019
+ * @author Prof. Ting, modified by Alexander Stein, Matt Scolaro and Tesfa Tesfaye
+ * @version 1/28/2020
  */
 public class UnitTestArrayPractice
 {
@@ -59,16 +61,30 @@ public class UnitTestArrayPractice
         System.out.print("Actual:    Lengths:  ");
         printArray(ArrayPractice.stringLengths(sArr));
         System.out.println("\n***End test ArrayPractice.stringLengths(String[])***\n");
-    }
 
-    /**
-     * This method will print the values of the input array, 
-     * each on the same line, separated by spaces.
-     * 
-     * @param obj[] The input array.
-     */
-    private static void printArray(Object objArr[])
-    {
+        Scanner in = new Scanner(System.in);
+        Random rand = new Random();
+        double[] values1 = new double[6 + rand.nextInt(6) - 1];
+        int[] values2 = new int[6 + rand.nextInt(6) - 1];
+
+        int i = 0;
+        int x = 0;
+
+        for (i = 0; i < values1.length; i++)
+        { values1[i] = rand.nextInt(3) - 4 + 2;}
+        
+        for (x = 0; x < values2.length; x++)
+        { values2[x] = rand.nextInt(11) ;}
+        
+    }
+        /**
+         * This method will print the values of the input array, 
+         * each on the same line, separated by spaces.
+         * 
+         * @param obj[] The input array.
+         */
+        private static void printArray(Object objArr[])
+        {
         if (objArr != null)
         {
             for(Object obj : objArr)
