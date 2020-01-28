@@ -4,8 +4,8 @@
  * 
  * DO NOT ALTER THIS CLASS.  
  *
- * @author Prof. White
- * @version Fall 2019
+ * @author Prof. Ting - Matthew Scolaro, ALexander Stein and Tesfa Tesfaye
+ * @version 1/28/2020
  */
 public class UnitTestArrayManager
 {
