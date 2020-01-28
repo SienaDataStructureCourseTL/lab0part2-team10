@@ -15,8 +15,8 @@
  * Debug (DO NOT WRITE YOUR OWN) the methods so they work as required.  
  * Bugs may include logic errors, syntax errors, and/or runtime errors.
  *
- * @author Prof. White, modified by (your names)
- * @version Lab 0, Fall 2019
+ * @author Prof. Ting, modified by Matthew Scolaro, Alexander Stein and Tesfa Tesfaye
+ * @version Lab 0, 1/28/2020
  */
 public class ArrayManager
 {
@@ -99,7 +99,7 @@ public class ArrayManager
     public int removeElement(int location)
     {
         // Hint: there are 2 errors in this method. One of the errors is in the for loop body.
-        int value;
+        int value= 0;
 
         if(location < nextAvailable)
         {
