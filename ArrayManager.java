@@ -16,6 +16,7 @@
  * Bugs may include logic errors, syntax errors, and/or runtime errors.
  *
  * @author Prof. Ting, modified by Matthew Scolaro, Alexander Stein and Tesfa Tesfaye
+ * Note: This code was completed with the assistance and guidance of a CS tutor.
  * @version Lab 0, 1/28/2020
  */
 public class ArrayManager
@@ -40,6 +41,9 @@ public class ArrayManager
     public ArrayManager(int numElements)
     {
         nextAvailable = 0;
+        iArr = new int [numElements];
+        for (int i=0; i < iArr.length; i++)
+        {iArr[i] = -999;}
     }
 
     /**
@@ -74,7 +78,7 @@ public class ArrayManager
         // Hint: there are two errors in the for loop header
         if(nextAvailable < iArr.length && location <= nextAvailable)
         {
-            for(int i = iArr.length; i > location; i++)
+            for(int i = iArr.length - 1; i > location; i--)
             {
                 iArr[i] = iArr[i - 1];
             }
@@ -99,14 +103,14 @@ public class ArrayManager
     public int removeElement(int location)
     {
         // Hint: there are 2 errors in this method. One of the errors is in the for loop body.
-        int value= 0;
+        int value = -999;
 
         if(location < nextAvailable)
         {
             value = iArr[location];
             for(int i = location; i < nextAvailable - 1; i++)
             {
-                iArr[i] = iArr[i - 1];
+                iArr[i] = iArr[i + 1];
             }
             nextAvailable--;
             iArr[nextAvailable] = -999;
