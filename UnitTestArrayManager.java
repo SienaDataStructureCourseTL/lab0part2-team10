@@ -5,6 +5,7 @@
  * DO NOT ALTER THIS CLASS.  
  *
  * @author Prof. Ting - Matthew Scolaro, ALexander Stein and Tesfa Tesfaye
+ * Note: This code was completed with the assistance and guidance of a CS tutor.
  * @version 1/28/2020
  */
 public class UnitTestArrayManager
