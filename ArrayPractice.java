@@ -4,7 +4,8 @@
  * Complete each of the following methods according to the method comments.
  * DO NOT CHANGE THE METHOD HEADERS.
  *
- * @author Alexander Stein, Matthew Scolaro, Tesfa, Tesfaye
+ * @author Alexander Stein, Matthew Scolaro, Tesfa Tesfaye
+ * Note: This code was completed with the assistance and guidance of a CS tutor.
  * @version 1/27/2020
  */
 public class ArrayPractice
@@ -115,8 +116,8 @@ public class ArrayPractice
         int i=0;
         Integer[] result = new Integer[arr.length]; 
         for (i = 0; i < arr.length; i++)
-            {result[i] = arr[i].length();}
-        
+        {result[i] = arr[i].length();}
+
         return result;    
     }
 }
